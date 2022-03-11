@@ -1,0 +1,20 @@
+version: '3.7'
+
+services:
+  nextline-web:
+    image: ghcr.io/simonsobs/nextline-web:v0.1.7
+    container_name: nextline-web
+    ports:
+      - "8080:80"
+    environment:
+      - API_HTTP=http://localhost:8000
+      - PUBLIC_PATH=/nextline/
+
+  nextline-backend:
+    build:
+      context: ./
+      dockerfile: backend.Dockerfile
+    image: so-daq-sequencer:latest
+    container_name: nextline-backend
+    ports:
+      - "8000:8000"
