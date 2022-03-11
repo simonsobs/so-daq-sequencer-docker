@@ -1,5 +1,15 @@
 .PHONY : build
 build :
-	docker build -t so-daq-sequencer .
+	docker-compose build --pull
+
+.PHONY : run
+run :
+	docker-compose up
+
+.PHONY : clean
+clean :
+	docker-compose down
+	docker image rm so-daq-sequencer-frontend:latest
+	docker image rm so-daq-sequencer:latest
 
 # vim: set expandtab!:

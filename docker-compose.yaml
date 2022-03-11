@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  frontend:
+    build:
+      context: ./
+      dockerfile: frontend.Dockerfile
+    image: so-daq-sequencer-frontend:latest
+    container_name: frontend
+    ports:
+      - "8080:80"
+    environment:
+      - API_HTTP=http://localhost:8000
+      - PUBLIC_PATH=/nextline/
+
+  backend:
+    build:
+      context: ./
+      dockerfile: backend.Dockerfile
+    image: so-daq-sequencer:latest
+    container_name: backend
+    ports:
+      - "8000:8000"
