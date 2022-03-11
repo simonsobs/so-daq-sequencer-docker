@@ -2,7 +2,10 @@ version: '3.7'
 
 services:
   nextline-web:
-    image: ghcr.io/simonsobs/nextline-web:v0.1.7
+    build:
+      context: ./
+      dockerfile: frontend.Dockerfile
+    image: so-daq-sequencer-frontend:latest
     container_name: nextline-web
     ports:
       - "8080:80"
