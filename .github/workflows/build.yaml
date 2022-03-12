@@ -3,9 +3,9 @@ name: Publish Images to Container Registry
 on:
   release:
     types: [ released ]
-  push:
-    tags:
-      - 'v*.*.*'
+  #push:
+  #  tags:
+  #    - 'v*.*.*'
   workflow_dispatch:
 
 env:
