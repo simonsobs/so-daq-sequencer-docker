@@ -1,4 +1,4 @@
-FROM ghcr.io/simonsobs/nextline-graphql:v0.1.6
+FROM ghcr.io/simonsobs/nextline-graphql:v0.1.7
 
 COPY requirements.txt /app/sequencer/requirements.txt
 
