@@ -7,13 +7,19 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - "BrianJKoopman"
 
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - "BrianJKoopman"
 
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
       interval: "daily"
+    reviewers:
+      - "BrianJKoopman"
