@@ -12,6 +12,7 @@ services:
     environment:
       - API_HTTP=http://localhost:8000
       - PUBLIC_PATH=/nextline/
+      - API_NAME=test-build
 
   backend:
     build:
