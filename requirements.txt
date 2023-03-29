@@ -1,2 +1,2 @@
 sorunlib==0.1.6
-nextline-schedule==0.1.3
+nextline-schedule==0.1.4
