@@ -11,5 +11,6 @@ clean :
 	docker-compose down
 	docker image rm so-daq-sequencer-frontend:latest
 	docker image rm so-daq-sequencer:latest
+	docker image rm so-daq-sequencer-scheduler:latest
 
 # vim: set expandtab!:

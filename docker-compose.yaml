@@ -22,3 +22,13 @@ services:
     container_name: backend
     ports:
       - "8000:8000"
+    environment:
+      - NEXTLINE_SCHEDULE__API=http://scheduler:8010/api/v1/schedule/
+      - NEXTLINE_SCHEDULE__POLICY={"policy":"dummy","config":{}}
+
+  scheduler:
+    build:
+      context: ./
+      dockerfile: scheduler.Dockerfile
+    image: so-daq-sequencer-scheduler:latest
+    container_name: scheduler
