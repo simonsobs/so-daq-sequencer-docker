@@ -1,2 +1,2 @@
-sorunlib==0.1.8
+sorunlib==0.1.9
 nextline-schedule==0.2.5
