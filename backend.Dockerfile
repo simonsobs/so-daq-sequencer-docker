@@ -1,4 +1,4 @@
-FROM ghcr.io/simonsobs/nextline-graphql:v0.5.9
+FROM ghcr.io/simonsobs/nextline-graphql:v0.6.0
 
 # Setup configuration environment
 ENV OCS_CONFIG_DIR=/config
