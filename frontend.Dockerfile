@@ -1,1 +1,1 @@
-FROM ghcr.io/simonsobs/nextline-web:v0.8.16
+FROM ghcr.io/simonsobs/nextline-web:v0.8.17
