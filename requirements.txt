@@ -1,4 +1,4 @@
-sorunlib==0.1.15
+sorunlib==0.1.16
 nextline-schedule==0.4.0
 nextline-alert==0.1.6
 nextline-rdb==0.6.9
