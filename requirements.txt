@@ -2,4 +2,4 @@ sorunlib==0.1.33
 nextline-schedule==0.5.3
 nextline-alert==0.10.1
 nextline-rdb==0.7.1
-tzdata==2025.3
+tzdata==2026.1
